@@ -49,11 +49,17 @@ public class LabQueue04 {
 
 	public static void printFile() {
 		if (q_printer.isEmpty()) {
+			
 			System.out.println("No file in queue");
 		} else {
 			System.out.println("Printing: " + q_printer.poll());
+			if(q_printer.isEmpty()) {
+				System.out.println("No file in queue");
+			}else {
+				System.out.println("Printer  queue => " + q_printer);
+			}
 
-			System.out.println("Printer  queue => " + q_printer);
+			
 		}
 		
 
